@@ -1,57 +1,41 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Marcello09/notion-lock/blob/main/README.md)
-[![pt](https://img.shields.io/badge/lang-pt-red.svg)](https://github.com/Marcello09/notion-lock/blob/main/README.pt-BR.md)
+# Notion-Lock
 
+A simple add-on for Notion that enables encryption and decryption of plain text using a password. It utilizes AES encryption directly in the browser, ensuring that no data is transmitted to any server during the process. Everything operates locally within your device's memory.
 
-[![Donate Bitcoin](https://img.shields.io/badge/Donate-Bitcoin-green.svg)](https://marcello09.github.io/donate-bitcoin/?amount=5&currency=USD)
-[![Donate Paypal](https://img.shields.io/badge/Donate-Paypal-blue.svg)](https://www.paypal.com/donate?business=V3VEBC9N4S6ES&no_recurring=0&currency_code=USD)
+## Changelog
+02/06/2024
+- Removed BR translation readme.
+- Adjusted README.md wording/instructions.
 
-# notion-lock
+## Features
+- **Local Encryption**: Encrypts your data locally in the browser with AES.
+- **Data Recovery**: Data can only be decrypted with the correct password.
+- **Multiple Passwords**: Allows for the use of different passwords for various texts.
 
-Simple add-on for Notion that encrypts and decrypts plain text using a password.
-It uses AES encryption in Browser, no data is send to any server during encryption or decryption. All runs locally on your machine memory ;D
+## How to Use
 
-It is only possible to recover the data by typing the text and the correct password used to encrypt the data. 
-This allows for multiple passwords to be used for different text.
+### Adding to Notion
+1. Embed the URL `https://sullielore.github.io/notion-lock/en` as a view in Notion.
+2. Adjust the frame size as needed.
 
-# How-to
+### Encrypting Text
+1. Enter a password to encrypt your data.
+2. Input the text you want to encrypt.
+3. Select "Encrypt text" and click "Generate text".
+4. Copy the encrypted data from the result or use "Copy to Clipboard".
+5. Store the encrypted text in Notion.
 
-## Adding it to notion
+### Decrypting Text
+1. Enter the password used for encryption.
+2. Paste the encrypted text into the field.
+3. Select "Decrypt" and click "Generate Text".
+4. Access your decrypted data.
 
-1. Add the URL https://marcello09.github.io/notion-lock/en as an embedded view on any page of Notion.
-2. Resize the frame to your liking.
-3. you are done! =D
+## Forking the Project
+To ensure continued access to this tool, you can fork this repository to your GitHub account and set up GitHub Pages on your forked project. This way, you're not dependent on the original repository's availability.
 
-## Encrypt text
+The entire script is contained within a single `index.html` file, so it can also be hosted independently of GitHub Pages if you have a hosting service.
 
-1. Type a password or passfrase to encrypt your data, you must remember this password and type exactly it in order to recover (decrypt)
-2. Type the text you wish to encrypt
-3. Choose the checkbox "Encrypt text"
-4. Press the blue buttom "Generate text"
-5. Copy the text below Result, this is your encrypted data, or press the buttom "Copy to Clipboard"
-6. Save the text anywhere you wish on Notion
+**Disclaimer**: The add-on runs entirely in your browser's memory using AES encryption. There is no way to recover encrypted data if you lose your password.
 
-## Decrypt text
-
-1. Type the password or passfrase you used to encrypt your text
-2. Copy the encrypted text to the textarea field
-3. Choose the checkbox "Decrypt"
-4. Press the green button "Generate Text"
-5. Thats it! Your secret data is now available to you!
-
-# Afraid of me deleting this repo?
-
-Some users have reached me out asking how relaiable their sensitive data is store since this is a public project hosted on github pages. I can´t garantee that this repo will live forever nor github pages will always be working. 
-
-To solve the issue of me deleting this repo, although I have no intention in doing it, you can always fork this repo. You will have it on your github account, and then you can set up github pages on your forked project. This negates the possibility of me deleting the repo. 
-
-Here is a how to setup github pages on a projec in case you don´t know how: [Quickstart for Github Pages](https://docs.github.com/en/pages/quickstart)
-
-The script is all in one single index.html file as well, so if you happen to have a hosting service, you can put it in there and avoid depending on github pages.
-
-#### Disclaimer: The add-on uses AES encryption in Browser, no data is send to any server during encryption or decryption. It runs local on your machine memory !! There is no way to recover data stored if you lose your password 
-
-# Like it?
-
-* Collab
-* Suggest new addons
-* Help me with a few bucks for a coffee ;D
+Project forked from Marcello09/notion-lock.
